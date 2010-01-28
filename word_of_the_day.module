@@ -16,6 +16,7 @@ function word_of_the_day_block($operation) {
       return $blocks;
       break;
     case 'view':
+      $block['subject'] = t("Merriam-Webster's Word of the Day");
       $block['content'] = theme('word_of_the_day');
       return $block;
       break;  
