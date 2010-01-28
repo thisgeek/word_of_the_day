@@ -1,0 +1,6 @@
+core = "6.x"
+description = "A block module that displays the Merriam-Webster word of the day."
+name = "Word of the Day"
+package = "Custom"
+project = "word_of_the_day"
+version = "6.x-0.1"

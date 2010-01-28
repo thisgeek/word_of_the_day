@@ -1,0 +1,23 @@
+<?php
+
+function word_of_the_day_theme() {
+  return array(
+    'word_of_the_day' => array(
+      'arguments' => array(),
+      'template' => 'word_of_the_day',
+    )
+  );
+}
+
+function word_of_the_day_block($operation) {
+  switch ($operation):
+    case 'list':
+      $blocks[] = array('info' => t('Word of the Day'));
+      return $blocks;
+      break;
+    case 'view':
+      $block['content'] = theme('word_of_the_day');
+      return $block;
+      break;  
+  endswitch;
+}
